@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestão de Resíduos Sólidos</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cce3f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #44aad2;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #44aad2;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #c4def3;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #44aad2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a1c8db;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gestão de Resíduos Sólidos</h1>
+        <p>Cadastro de pontos de descarte irregular</p>
+    </header>
+
+    <main>
+
+        <h2>Registrar ocorrência</h2>
+
+        <form action="/ocorrencias" method="POST">
+
+            <label for="local">Local:</label>
+            <input
+                type="text"
+                id="local"
+                name="local"
+                placeholder="Ex.: Rua das Flores, 120"
+                required
+            >
+
+            <label for="tipo_residuo">Tipo de resíduo:</label>
+            <select id="tipo_residuo" name="tipo_residuo" required>
+                <option value="">Selecione</option>
+                <option value="Lixo doméstico">Lixo doméstico</option>
+                <option value="Entulho">Entulho</option>
+                <option value="Eletrônico">Eletrônico</option>
+                <option value="Reciclável">Reciclável</option>
+            </select>
+
+            <label for="nivel_risco">Nível de risco:</label>
+            <select id="nivel_risco" name="nivel_risco" required>
+                <option value="">Selecione</option>
+                <option value="Baixo">Baixo</option>
+                <option value="Médio">Médio</option>
+                <option value="Alto">Alto</option>
+            </select>
+
+            <label for="data_registro">Data do registro:</label>
+            <input
+                type="date"
+                id="data_registro"
+                name="data_registro"
+                required
+            >
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="">Selecione</option>
+                <option value="Pendente">Pendente</option>
+                <option value="Em análise">Em análise</option>
+                <option value="Resolvido">Resolvido</option>
+            </select>
+
+            <button type="submit">
+                Cadastrar ocorrência
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
