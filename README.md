@@ -238,8 +238,9 @@ Os testes foram realizados utilizando o Thunder Client.
 
 O projeto também possui um formulário HTML para cadastro de novas ocorrências.
 
-![Formulário]:(Client/https://isahvizeu.github.io/https://github.com/isahvizeu/sesi_pbe1_vps01_gestao_de_residuos_solidos_2026/)
+![Formulário](prints/print1registro.png)
 
+![Formulário](prints/print2registros.png)
 ---
 
 ##  Projeto
