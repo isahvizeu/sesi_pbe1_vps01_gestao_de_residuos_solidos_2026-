@@ -240,7 +240,7 @@ O projeto também possui um formulário HTML para cadastro de novas ocorrências
 
 ![Formulário](prints/print1registro.png)
 
-![Formulário](prints/print2registros.png)
+![Formulário](prints/print2resgistros.png)
 ---
 
 ##  Projeto
